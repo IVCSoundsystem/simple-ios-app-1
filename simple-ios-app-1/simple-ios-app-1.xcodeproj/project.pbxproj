@@ -13,6 +13,7 @@
 		5CF86604221D63FF0031AB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF86603221D63FF0031AB72 /* Assets.xcassets */; };
 		5CF86607221D63FF0031AB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF86605221D63FF0031AB72 /* LaunchScreen.storyboard */; };
 		B75C66032265A2CA007EE71F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75C66022265A2CA007EE71F /* CloudKit.framework */; };
+		CD50D1F0D7CB38E211FC8AE2 /* Pods_simple_ios_app_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,11 @@
 		5CF86603221D63FF0031AB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CF86606221D63FF0031AB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CF86608221D63FF0031AB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C44D4C8802F3E8A11DDBDB /* Pods-simple-ios-app-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simple-ios-app-1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simple-ios-app-1/Pods-simple-ios-app-1.debug.xcconfig"; sourceTree = "<group>"; };
+		9A86FF396F1726DDBFBD85F2 /* Pods-simple-ios-app-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simple-ios-app-1.release.xcconfig"; path = "Pods/Target Support Files/Pods-simple-ios-app-1/Pods-simple-ios-app-1.release.xcconfig"; sourceTree = "<group>"; };
 		B75C65FA22659E75007EE71F /* simple-ios-app-1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "simple-ios-app-1.entitlements"; sourceTree = "<group>"; };
 		B75C66022265A2CA007EE71F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simple_ios_app_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +37,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75C66032265A2CA007EE71F /* CloudKit.framework in Frameworks */,
+				CD50D1F0D7CB38E211FC8AE2 /* Pods_simple_ios_app_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1386A9BBA06D9038D2B423A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66C44D4C8802F3E8A11DDBDB /* Pods-simple-ios-app-1.debug.xcconfig */,
+				9A86FF396F1726DDBFBD85F2 /* Pods-simple-ios-app-1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5CF865F0221D63FD0031AB72 = {
 			isa = PBXGroup;
 			children = (
 				5CF865FB221D63FD0031AB72 /* simple-ios-app-1 */,
 				5CF865FA221D63FD0031AB72 /* Products */,
 				B75C65FB22659E81007EE71F /* Frameworks */,
+				1386A9BBA06D9038D2B423A7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B75C66022265A2CA007EE71F /* CloudKit.framework */,
+				C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CF8660B221D63FF0031AB72 /* Build configuration list for PBXNativeTarget "simple-ios-app-1" */;
 			buildPhases = (
+				CBD71929878BEDECA5911813 /* [CP] Check Pods Manifest.lock */,
 				5CF865F5221D63FD0031AB72 /* Sources */,
 				5CF865F6221D63FD0031AB72 /* Frameworks */,
 				5CF865F7221D63FD0031AB72 /* Resources */,
+				68175ABA59515E5D9FB6E06C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +169,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68175ABA59515E5D9FB6E06C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-simple-ios-app-1/Pods-simple-ios-app-1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simple-ios-app-1/Pods-simple-ios-app-1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD71929878BEDECA5911813 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simple-ios-app-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CF865F5221D63FD0031AB72 /* Sources */ = {
@@ -302,6 +369,7 @@
 		};
 		5CF8660C221D63FF0031AB72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C44D4C8802F3E8A11DDBDB /* Pods-simple-ios-app-1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "simple-ios-app-1/simple-ios-app-1.entitlements";
@@ -323,6 +391,7 @@
 		};
 		5CF8660D221D63FF0031AB72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A86FF396F1726DDBFBD85F2 /* Pods-simple-ios-app-1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "simple-ios-app-1/simple-ios-app-1.entitlements";
