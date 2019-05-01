@@ -14,7 +14,35 @@
 		5CF86607221D63FF0031AB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF86605221D63FF0031AB72 /* LaunchScreen.storyboard */; };
 		B75C66032265A2CA007EE71F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75C66022265A2CA007EE71F /* CloudKit.framework */; };
 		CD50D1F0D7CB38E211FC8AE2 /* Pods_simple_ios_app_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */; };
+		EEB6E801227922E70005B1B4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB6E800227922E70005B1B4 /* NotificationCenter.framework */; };
+		EEB6E804227922E70005B1B4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6E803227922E70005B1B4 /* TodayViewController.swift */; };
+		EEB6E807227922E70005B1B4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB6E805227922E70005B1B4 /* MainInterface.storyboard */; };
+		EEB6E80B227922E70005B1B4 /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EEB6E7FF227922E70005B1B4 /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEB6E809227922E70005B1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF865F1221D63FD0031AB72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB6E7FE227922E70005B1B4;
+			remoteInfo = Today;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEB6E80F227922E70005B1B4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EEB6E80B227922E70005B1B4 /* Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5CF865F9221D63FD0031AB72 /* simple-ios-app-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-ios-app-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +57,11 @@
 		B75C65FA22659E75007EE71F /* simple-ios-app-1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "simple-ios-app-1.entitlements"; sourceTree = "<group>"; };
 		B75C66022265A2CA007EE71F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simple_ios_app_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB6E7FF227922E70005B1B4 /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB6E800227922E70005B1B4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		EEB6E803227922E70005B1B4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		EEB6E806227922E70005B1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EEB6E808227922E70005B1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +71,14 @@
 			files = (
 				B75C66032265A2CA007EE71F /* CloudKit.framework in Frameworks */,
 				CD50D1F0D7CB38E211FC8AE2 /* Pods_simple_ios_app_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB6E7FC227922E70005B1B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB6E801227922E70005B1B4 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF865FB221D63FD0031AB72 /* simple-ios-app-1 */,
+				EEB6E802227922E70005B1B4 /* Today */,
 				5CF865FA221D63FD0031AB72 /* Products */,
 				B75C65FB22659E81007EE71F /* Frameworks */,
 				1386A9BBA06D9038D2B423A7 /* Pods */,
@@ -67,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF865F9221D63FD0031AB72 /* simple-ios-app-1.app */,
+				EEB6E7FF227922E70005B1B4 /* Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,8 +133,19 @@
 			children = (
 				B75C66022265A2CA007EE71F /* CloudKit.framework */,
 				C1ADF59A5452733530828156 /* Pods_simple_ios_app_1.framework */,
+				EEB6E800227922E70005B1B4 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEB6E802227922E70005B1B4 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				EEB6E803227922E70005B1B4 /* TodayViewController.swift */,
+				EEB6E805227922E70005B1B4 /* MainInterface.storyboard */,
+				EEB6E808227922E70005B1B4 /* Info.plist */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,15 +160,34 @@
 				5CF865F6221D63FD0031AB72 /* Frameworks */,
 				5CF865F7221D63FD0031AB72 /* Resources */,
 				68175ABA59515E5D9FB6E06C /* [CP] Embed Pods Frameworks */,
+				EEB6E80F227922E70005B1B4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EEB6E80A227922E70005B1B4 /* PBXTargetDependency */,
 			);
 			name = "simple-ios-app-1";
 			productName = "simple-ios-app-1";
 			productReference = 5CF865F9221D63FD0031AB72 /* simple-ios-app-1.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EEB6E7FE227922E70005B1B4 /* Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB6E80C227922E70005B1B4 /* Build configuration list for PBXNativeTarget "Today" */;
+			buildPhases = (
+				EEB6E7FB227922E70005B1B4 /* Sources */,
+				EEB6E7FC227922E70005B1B4 /* Frameworks */,
+				EEB6E7FD227922E70005B1B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Today;
+			productName = Today;
+			productReference = EEB6E7FF227922E70005B1B4 /* Today.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -122,7 +195,7 @@
 		5CF865F1221D63FD0031AB72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Akvelon;
 				TargetAttributes = {
@@ -136,6 +209,9 @@
 								enabled = 1;
 							};
 						};
+					};
+					EEB6E7FE227922E70005B1B4 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -153,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				5CF865F8221D63FD0031AB72 /* simple-ios-app-1 */,
+				EEB6E7FE227922E70005B1B4 /* Today */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +242,14 @@
 				5CF86607221D63FF0031AB72 /* LaunchScreen.storyboard in Resources */,
 				5CF86604221D63FF0031AB72 /* Assets.xcassets in Resources */,
 				5CF86602221D63FD0031AB72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB6E7FD227922E70005B1B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB6E807227922E70005B1B4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +314,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EEB6E7FB227922E70005B1B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB6E804227922E70005B1B4 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEB6E80A227922E70005B1B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB6E7FE227922E70005B1B4 /* Today */;
+			targetProxy = EEB6E809227922E70005B1B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5CF86600221D63FD0031AB72 /* Main.storyboard */ = {
@@ -246,6 +347,14 @@
 				5CF86606221D63FF0031AB72 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEB6E805227922E70005B1B4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEB6E806227922E70005B1B4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -371,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66C44D4C8802F3E8A11DDBDB /* Pods-simple-ios-app-1.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "simple-ios-app-1/simple-ios-app-1.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -393,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A86FF396F1726DDBFBD85F2 /* Pods-simple-ios-app-1.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "simple-ios-app-1/simple-ios-app-1.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -408,6 +519,48 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EEB6E80D227922E70005B1B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X3TP675HB;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camino.simpleiosapp.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEB6E80E227922E70005B1B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X3TP675HB;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camino.simpleiosapp.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -428,6 +581,15 @@
 			buildConfigurations = (
 				5CF8660C221D63FF0031AB72 /* Debug */,
 				5CF8660D221D63FF0031AB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB6E80C227922E70005B1B4 /* Build configuration list for PBXNativeTarget "Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB6E80D227922E70005B1B4 /* Debug */,
+				EEB6E80E227922E70005B1B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
